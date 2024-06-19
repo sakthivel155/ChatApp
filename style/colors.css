@@ -1,0 +1,17 @@
+:root {
+    /* solid colors */
+    --c-black: #0b1215;
+    --c-white: #ffffff;
+    
+    --c-blue-100: #faf9fe;
+    --c-blue-200: #dee5ff;
+    --c-blue-300: #1b59f9;                                    
+    
+    --c-grey-100: #eeeeee;
+    --c-grey-200: #cdc8c8;
+    --c-grey-300: #a4a3a7;
+
+    /* shadows  */
+    --shadow-black: 0 1px 4px -4px var(--c-black); 
+    --shadow-blue: inset 4px 0 0 0 var(--c-blue-300);
+}
