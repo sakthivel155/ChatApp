@@ -1,6 +1,4 @@
 :root {
-    --h-full: 100%;
-    --w-full: 100%;
     --h-half: 50%;
     --w-half: 50%;
 
@@ -10,9 +8,21 @@
     --br-radius-full: 100%;
     --br-radius-half: 50%;
 
+    --w-profile-picture: 50px;
+    --h-profile-picture: 50px;
+
+    --h-sidebar-header : 100px;
+    --w-app-sidebar: 84px;
+    --w-chatlist-container: 600px;
+    
+    /* chatlist area heights for calc function  */
     --h-search-bar: 80px;
     --h-chatlist-header: 100px;
     --h-archieve-container: 50px;
+
+    /* conversation area heights for calc function  */
+    --h-conversation-header: 100px;
+    --h-conversation-footer: 70px;
 }
 
 * {
