@@ -1,513 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style -->
-     <link rel="stylesheet" href="./style/root.css">
-    <!-- icon pack - remixicons  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- icon & title -->
-    <link rel="icon" href="./assets/icon/logoIcon.png">
-    <title>Chat App</title>
-</head>
-<body>
-    <div class="app-container">
-        <aside class="app-sidebar">
-            <div class="app-sidebar-menu">
-                <div class="app-logo-container">
-                    <a href="#">
-                     <img class="app-logo" src="./assets/icon/logoIcon.png" alt="chatapp">
-                    </a> 
-                 </div>
-                 <ul class="app-sidebar-menu">
-                     <li  class="app-sidebar-icon">
-                         <a class="app-sidebar-icon" href="#">
-                             <i class="ri-function-line"></i>
-                         </a>
-                     </li>
-                     <li class="app-sidebar-icon">
-                         <a class="app-sidebar-icon" href="#">
-                             <i class="ri-compass-3-line"></i>
-                         </a>
-                     </li>
-                     <li class="app-sidebar-icon selected">
-                         <a class="app-sidebar-icon " href="#">
-                             <i class="ri-message-2-line"></i>
-                         </a>
-                     </li>
-                     <li class="app-sidebar-icon">
-                         <a class="app-sidebar-icon" href="#">
-                             <i class="ri-heart-line"></i>
-                         </a>
-                     </li>
-                     <li class="app-sidebar-icon">
-                         <a class="app-sidebar-icon" href="#">
-                             <i class="ri-bookmark-line"></i>
-                         </a>
-                     </li>
-                 </ul>
-            </div>
-            <ul class="app-sidebar-menu">
-                <li  class="app-sidebar-icon">
-                    <a class="app-sidebar-icon" href="#">
-                        <i class="ri-information-line"></i>
-                    </a>
-                </li>
-                <li class="app-sidebar-icon">
-                    <a class="app-sidebar-icon" href="#">
-                        <i class="ri-settings-3-line"></i>
-                    </a>
-                </li>
-                <li class="app-sidebar-icon">
-                    <a class="app-sidebar-icon" href="#">
-                        <i class="ri-logout-box-r-line"></i>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <div class="app-chat-container">
-            <section class="chat-list-container">
-                <!-- chat list header -->
-                <header class="chat-list-header">
-                    <div class="chat-list-user-details">
-                        <div>
-                            <img src="./Assets/users image/admin.jpg" alt="user" loading="lazy" class="user-image" />
-                        </div>
-                        <div>
-                            <div><span>Good Morning</span></div>
-                            <span class="title">Omi Gusty Rifani</span>
-                        </div>
-                    </div>
-                </header>
-
-                <div class="chat-list-search-bar">
-                    <img src="./assets/icon/searchIcon.svg" alt="searchIcon" loading="lazy" class="search-icon" />
-                    <input type="search" class="chat-list-input secondary-text" placeholder="Search or start new message" />
-                </div>
-
-                <div class="archieve-count-container">
-                    <button class="default-btn archive-btn">
-                        <span>Archived</span>
-                        <span>221</span>
-                        <i class="ri-inbox-archive-fill archieve-icon"></i>
-                    </button>
-                </div>
-
-                <div class="messeged-contacts-container">
-                    <ul>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img2.jpeg" loading="lazy" alt="userimg1" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Paveen kumar</span></div>
-                                    <span class="secondary-text">Ola coma tale tale um</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <div>
-                                        <div class="unread-count-container"></div>
-                                        <p class="unread-count">5</p>
-                                    </div>
-                                    <div class="messaged-time">12:26&nbsp;AM</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img3.jpg" loading="lazy" alt="userimg3" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Kalwabed Rizki</span></div>
-                                    <span class="secondary-text">How about we visit wayanad</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <span class="messaged-time">12:10&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Ika Harumningtyas</span></div>
-                                    <span class="secondary-text">I can't go today</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">11:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Ribut Santso</span></div>
-                                    <span class="secondary-text">Keep it up bro</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">11:10&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Muhammad Amru</span></div>
-                                    <span class="secondary-text">Hahaha, i think so</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">10:34&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Toni</span></div>
-                                    <span class="secondary-text">Let's go for a walk</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <div>
-                                        <div><div class="unread-count-container"></div></div>
-                                        <p class="unread-count">4</p>
-                                    </div>
-                                    <div class="messaged-time">10:26&nbsp;AM</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img8.jpg" loading="lazy" alt="userimg8" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Bharani dharan</span></div>
-                                    <span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <span class="read-recipts"><i class="ri-check-double-line"></i></span>
-                                    <span class="messaged-time">12:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img9.jpg" loading="lazy" alt="userimg9" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">PaveenKumar</span></div>
-                                    <span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <span class="read-recipts"><i class="ri-check-double-line"></i></span>
-                                    <span class="messaged-time">12:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img10.jpeg" loading="lazy" alt="userimg10" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Sophia senthamarai</span></div>
-                                    <span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <span class="read-recipts"><i class="ri-check-double-line"></i></span>
-                                    <span class="messaged-time">12:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img11.jpeg" loading="lazy" alt="userimg11" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Sakthi</span></div>
-                                    <span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <div>
-                                        <div class="unread-count-container"></div>
-                                        <p class="unread-count">3</p>
-                                    </div>
-                                    <div class="messaged-time">12:26&nbsp;AM</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Ika Harumningtyas</span></div>
-                                    <span class="secondary-text">I can't go today</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">11:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Ribut Santso</span></div>
-                                    <span class="secondary-text">Keep it up bro</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">11:10&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Muhammad Amru</span></div>
-                                    <span class="secondary-text">Hahaha, i think so</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">10:34&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Toni</span></div>
-                                    <span class="secondary-text">Let's go for a walk</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <div>
-                                        <div class="unread-count-container"></div>
-                                        <p class="unread-count">3</p>
-                                    </div>
-                                    <div class="messaged-time">12:26&nbsp;AM</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Ika Harumningtyas</span></div>
-                                    <span class="secondary-text">I can't go today</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">11:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Ribut Santso</span></div>
-                                    <span class="secondary-text">Keep it up bro</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">11:10&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Muhammad Amru</span></div>
-                                    <span class="secondary-text">Hahaha, i think so</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <i class="ri-check-double-line read-recipts"></i>
-                                    <span class="messaged-time">10:34&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Toni</span></div>
-                                    <span class="secondary-text">Let's go for a walk</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <div>
-                                        <div class="unread-count-container"></div>
-                                        <p class="unread-count">3</p>
-                                    </div>
-                                    <div class="messaged-time">12:26&nbsp;AM</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img8.jpg" loading="lazy" alt="userimg8" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">Bharani dharan</span></div>
-                                    <span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <span class="read-recipts"><i class="ri-check-double-line"></i></span>
-                                    <span class="messaged-time">12:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="messeged-contact-link">
-                                <div>
-                                    <img class="messeged-contact-image" src="./Assets/users image/img9.jpg" loading="lazy" alt="userimg9" />
-                                </div>
-                                <div class="messaged-contact-info">
-                                    <div><span class="messaged-contact-name">PaveenKumar</span></div>
-                                    <span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
-                                </div>
-                                <div class="messaged-contact-more">
-                                    <span class="read-recipts"><i class="ri-check-double-line"></i></span>
-                                    <span class="messaged-time">12:30&nbsp;AM</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="chat-conversation-container">
-                <header class="chat-conversation-header">
-                    <div class="chat-conversation-user-details">
-                        <div>
-                            <img src="./Assets/users image/img3.jpg" alt="user" loading="lazy" class="user-image" />
-                        </div>
-                        <div>
-                            <div><span class="title">Kalwabed Rizki</span></div>
-                            <span>last seen, 09:13 AM</span>
-                        </div>
-                    </div>
-                    <div class="chat-conversation-icons">
-                        <button class="default-btn header-icon">
-                            <i class="ri-search-2-line"></i>
-                        </button>
-                        <button class="default-btn header-icon">
-                            <i class="ri-phone-line"></i>
-                        </button>
-                        <button class="default-btn header-icon">
-                            <i class="ri-side-bar-line"></i>
-                        </button>
-                        <button class="default-btn header-icon">
-                            <i class="ri-more-2-fill"></i>
-                        </button>
-                    </div>
-                </header>
-                <div class="chat-conversation-main">
-                    <ul class="chat-conversation">
-                        <div class="current-convo-day">
-                            <span class="day">
-                                yesterday
-                            </span>
-                        </div>
-                        <li class="sender-message">
-                            <p>I have updated the last task, please check it OMI</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="sender-message">
-                            <p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="receved-message">
-                            <p>Okay bed thanks for the progress update</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="receved-message">
-                            <p>Wow really, where are we going on vacation ?</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="sender-message">
-                            <p>How about we visit green scenery in my grandmother's hometown. so we can feel refreshing there !</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="stack-image">
-                            <img src="./assets/stock images/img1.jpg" alt="img1">
-                            <img src="./assets/stock images/img2.jpg" alt="img2">
-                        </li>
-                        <li class="receved-message">
-                            <p>Okay bed thanks for the progress update</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="receved-message">
-                            <p>Wow really, where are we going on vacation ?</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="sender-message">
-                            <p>I have updated the last task, please check it OMI</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="sender-message">
-                            <p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
-                            <span>09:09 AM</span>
-                        </li>
-                        <li class="receved-message">
-                            <p>Wow really, where are we going on vacation ?</p>
-                            <span>09:09 AM</span>
-                        </li>
-                    </ul>
-                </div>
-                <footer class="chat-conversarion-footer">
-                    <div class="chatbox-container">
-                        
-                        <div class="emoj">
-                            <img src="./assets/icon/slightly-smiling-face.png" alt="smiling emoj">
-                        </div>
-                        <input type="text" class="default-input chat-input" placeholder="Write a message"/>
-                        <div class="chat-icons">
-                            <i class="ri-link-m textbar-icons"></i>
-                            <i class="ri-mic-line textbar-icons"></i>
-                            <i class="ri-send-plane-fill textbar-icons send-btn"></i>
-                        </div>
-                    </div>
-                </footer>
-            </section>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- icon pack - remixicons  -->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+		<!-- title-icon & title -->
+		<link rel="icon" href="./assets/icon/logoIcon.png">
+		<title>Chat App</title>
+		<!-- style -->
+		<link rel="stylesheet" href="./style/root.css">
+	</head>
+	<body>
+		<div class="app-container">
+			<aside class="app-sidebar">
+				<div class="app-sidebar-menu">
+					<div class="app-logo-container">
+						<a href="#">
+						<img src="./assets/icon/logoIcon.png" alt="chatapp">
+						</a> 
+					</div>
+					<ul>
+						<li  class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-function-line"></i>
+							</a>
+						</li>
+						<li class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-compass-3-line"></i>
+							</a>
+						</li>
+						<li class="app-sidebar-icon selected">
+							<a href="#">
+							<i class="ri-message-2-line"></i>
+							</a>
+						</li>
+						<li class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-heart-line"></i>
+							</a>
+						</li>
+						<li class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-bookmark-line"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="app-sidebar-menu">
+					<ul>
+						<li  class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-information-line"></i>
+							</a>
+						</li>
+						<li class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-settings-3-line"></i>
+							</a>
+						</li>
+						<li class="app-sidebar-icon">
+							<a href="#">
+							<i class="ri-logout-box-r-line"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<main class="chat-container">
+				<div class="chatlist-section">
+					<header class="chatlist-header">
+						<div class="chatlist-user-details">
+							<div>
+								<img src="./Assets/userImages/admin.jpg" alt="user" loading="lazy" class="user-avatar">
+							</div>
+							<div>
+								<div><span>Good Morning</span></div>
+								<span class="user-name">Omi Gusty Rifani</span>
+							</div>
+						</div>
+					</header>
+					<div class="chatlist-searchbox">
+						<img src="./assets/icon/searchIcon.svg" alt="searchIcon" loading="lazy">
+						<input type="search" placeholder="Search or start new message" class="default-input">
+					</div>
+					<div class="chatlist-archivebox">
+						<button class="default-btn chatlist-archive-btn">
+						<span>Archived</span>
+						<span>221</span>
+						<i class="ri-inbox-archive-fill f16"></i>
+						</button>
+					</div>
+					<div class="chatlist-contactbox">
+						<ul>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img2.jpeg" loading="lazy" alt="userimg1">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Paveen kumar</span></div>
+										<span class="secondary-text">Ola coma tale tale um</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<div>
+											<div class="unread-count-container"></div>
+											<p class="unread-count">5</p>
+										</div>
+										<div class="chatlist-time">12:26&nbsp;AM</div>
+									</div>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img3.jpg" loading="lazy" alt="userimg3">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Kalwabed Rizki</span></div>
+										<span class="secondary-text">How about we visit wayanad</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<span class="chatlist-time">12:10&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img4.jpg" loading="lazy" alt="userimg4">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Ika Harumningtyas</span></div>
+										<span class="secondary-text">I can't go today</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<i class="ri-check-double-line read-recipts"></i>
+										<span class="chatlist-time">11:30&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img5.jpg" loading="lazy" alt="userimg5">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Ribut Santso</span></div>
+										<span class="secondary-text">Keep it up bro</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<i class="ri-check-double-line read-recipts"></i>
+										<span class="chatlist-time">11:10&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img6.jpg" loading="lazy" alt="iserimg6">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Muhammad Amru</span></div>
+										<span class="secondary-text">Hahaha, i think so</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<i class="ri-check-double-line read-recipts"></i>
+										<span class="chatlist-time">10:34&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img7.jpg" loading="lazy" alt="userimg7">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Toni</span></div>
+										<span class="secondary-text">Let's go for a walk</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<div>
+											<div>
+												<div class="unread-count-container"></div>
+											</div>
+											<p class="unread-count">4</p>
+										</div>
+										<div class="chatlist-time">10:26&nbsp;AM</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img8.jpg" loading="lazy" alt="userimg8">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Bharani dharan</span></div>
+										<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+										<span class="chatlist-time">12:30&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img4.jpg" loading="lazy" alt="userimg4">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Ika Harumningtyas</span></div>
+										<span class="secondary-text">I can't go today</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<i class="ri-check-double-line read-recipts"></i>
+										<span class="chatlist-time">11:30&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img5.jpg" loading="lazy" alt="userimg5">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Ribut Santso</span></div>
+										<span class="secondary-text">Keep it up bro</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<i class="ri-check-double-line read-recipts"></i>
+										<span class="chatlist-time">11:10&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img6.jpg" loading="lazy" alt="iserimg6">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Muhammad Amru</span></div>
+										<span class="secondary-text">Hahaha, i think so</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<i class="ri-check-double-line read-recipts"></i>
+										<span class="chatlist-time">10:34&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img7.jpg" loading="lazy" alt="userimg7">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Toni</span></div>
+										<span class="secondary-text">Let's go for a walk</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<div>
+											<div>
+												<div class="unread-count-container"></div>
+											</div>
+											<p class="unread-count">4</p>
+										</div>
+										<div class="chatlist-time">10:26&nbsp;AM</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="chatlist-contact-link">
+									<div>
+										<img class="chatlist-contact-image" src="./Assets/userImages/img8.jpg" loading="lazy" alt="userimg8">
+									</div>
+									<div class="chatlist-contact-info">
+										<div><span class="chatlist-contact-name">Bharani dharan</span></div>
+										<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
+									</div>
+									<div class="chatlist-contact-more">
+										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+										<span class="chatlist-time">12:30&nbsp;AM</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="chatconversation-section">
+					<header class="chatconversation-header">
+						<div class="chatconversation-user-details">
+							<div>
+								<img src="./Assets/userImages/img3.jpg" alt="user" loading="lazy" class="user-avatar">
+							</div>
+							<div>
+								<div><span class="user-name">Kalwabed Rizki</span></div>
+								<span>last seen, 09:13 AM</span>
+							</div>
+						</div>
+						<div class="chatconversation-icons">
+							<button class="default-btn icon-btn">
+							<i class="ri-search-2-line"></i>
+							</button>
+							<button class="default-btn icon-btn">
+							<i class="ri-phone-line"></i>
+							</button>
+							<button class="default-btn icon-btn">
+							<i class="ri-side-bar-line"></i>
+							</button>
+							<button class="default-btn icon-btn">
+							<i class="ri-more-2-fill"></i>
+							</button>
+						</div>
+					</header>
+					<main class="chatconversation-main">
+						<ul class="chatconversation">
+							<li class="current-convo-day">
+								<span class="day">
+								yesterday
+								</span>
+							</li>
+							<li class="sender-message">
+								<p>I have updated the last task, please check it OMI</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="sender-message">
+								<p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="receved-message">
+								<p>Okay bed thanks for the progress update</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="receved-message">
+								<p>Wow really, where are we going on vacation ?</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="sender-message">
+								<p>How about we visit green scenery in my grandmother's hometown. so we can feel refreshing there !</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="stack-image">
+								<img src="./assets/stockImages/img1.jpg" alt="img1">
+								<img src="./assets/stockImages/img2.jpg" alt="img2">
+							</li>
+							<li class="receved-message">
+								<p>Okay bed thanks for the progress update</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="receved-message">
+								<p>Wow really, where are we going on vacation ?</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="sender-message">
+								<p>I have updated the last task, please check it OMI</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="sender-message">
+								<p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
+								<span>09:09 AM</span>
+							</li>
+							<li class="receved-message">
+								<p>Wow really, where are we going on vacation ?</p>
+								<span>09:09 AM</span>
+							</li>
+						</ul>
+					</main>
+					<footer class="chatconversarion-footer">
+						<div class="chatconversarion-inputbox">
+							<div class="emoj">
+								<img src="./assets/icon/slightly-smiling-face.png" alt="smiling emoj">
+							</div>
+							<input type="text" class="default-input chat-input" placeholder="Write a message">
+							<div class="chat-icons">
+								<i class="ri-link-m textbar-icons"></i>
+								<i class="ri-mic-line textbar-icons"></i>
+								<i class="ri-send-plane-fill textbar-icons send-btn"></i>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</main>
+		</div>
+	</body>
 </html>
