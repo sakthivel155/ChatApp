@@ -1,12 +1,12 @@
 :root {
 	--h-full: 100%;
-	--w-full: 100%;                               
+	--w-full: 100%;
 
-    --h-half: 50%;
+	--h-half: 50%;
 	--w-half: 50%;
 
-	--h-screen: 100vh;                              
-	--w-screen: 100vw;                              
+	--h-screen: 100vh;
+	--w-screen: 100vw;
 
 	--br-radius-full: 100%;
 	--br-radius-half: 50%;
@@ -15,11 +15,11 @@
 	--h-profile-picture: 50px;
 
 	--h-sidebar-header: 100px;
-    --w-app-sidebar: 84px;                          
-	--w-chatlist-container: 600px;                  
+	--w-app-sidebar: 84px;
+	--w-chatlist-container: 600px;
 
 	/* chatlist area heights for calc function  */
-	--h-chatlist-header: 100px;                   
+	--h-chatlist-header: 100px;
 	--h-search-bar: 80px;
 	--h-archieve-container: 50px;
 
